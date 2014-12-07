@@ -1,0 +1,9 @@
+#power log
+on property:persist.service.kernel.enable=2
+    restart log-power
+
+on property:persist.service.kernel.enable=1
+    restart log-power
+
+on property:persist.service.kernel.enable=0
+    stop log-power
